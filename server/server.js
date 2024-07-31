@@ -6,9 +6,9 @@ const PORT = 8080;
 app.use(cors());
 
 app.get("/api/home", (req, res) => {
-    res.json({ message: "Server is on!"});
+    res.json({ message: "Server is on!", people: ["Harry", "Jack", "Barry"]});
 });
 
 app.listen(PORT, () => {
-    console.log(`Server started on port ${PORT}`)
+    console.log(`Server started on port ${PORT}`);
 })
